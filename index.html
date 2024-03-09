@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Basic Form</title>
+</head>
+<body>
+
+    <h2>Basic Form</h2>
+
+    <form id="basicForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+
+        <label for="transportation">How do you go to school:</label>
+        <input type="radio" id="car" name="transportation" value="car" required>
+        <label for="car">Car</label>
+        <input type="radio" id="commute" name="transportation" value="commute" required>
+        <label for="commute">Commute</label>
+        <input type="radio" id="bus" name="transportation" value="bus" required>
+        <label for="bus">Bus</label>
+
+        <label for="birthMonth">In which month were you born:</label>
+        <select id="birthMonth" name="birthMonth" required>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+
+        <label for="aboutYourself">Say something about yourself:</label>
+        <textarea id="aboutYourself" name="aboutYourself" rows="4"></textarea>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
